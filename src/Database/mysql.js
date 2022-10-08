@@ -1,11 +1,11 @@
-import mysql from 'mysql';
+import mysql from 'mysql2';
 import { promisify } from 'util';
 
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    password: "",
-    database: 'frave_food'
+    password: "victor_98",
+    database: 'helpin_db'
 });
 
 pool.getConnection((err, connection) => {
