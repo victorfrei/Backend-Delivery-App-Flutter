@@ -5,7 +5,8 @@ const pool = mysql.createPool({
     host: 'ec2-52-23-131-232.compute-1.amazonaws.com',
     user: 'qaogxlyxzxdhfp',
     password: "676ede45bdb7c235890cc6bf449dc10e9032fc4cf7c216ccbda3664e4681e1e9",
-    database: 'd9t9uaqop9gdhi'
+    database: 'd9t9uaqop9gdhi',
+    port: 5432
 });
 
 pool.getConnection((err, connection) => {
