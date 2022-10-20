@@ -2,11 +2,11 @@ import mysql from 'mysql2';
 import { promisify } from 'util';
 
 const pool = mysql.createPool({
-    host: 'ec2-52-23-131-232.compute-1.amazonaws.com',
-    user: 'qaogxlyxzxdhfp',
-    password: "676ede45bdb7c235890cc6bf449dc10e9032fc4cf7c216ccbda3664e4681e1e9",
-    database: 'd9t9uaqop9gdhi',
-    port: 5432
+    host: 'db-mysql-nyc1-98944-do-user-12698162-0.b.db.ondigitalocean.com',
+    user: 'doadmin',
+    password: "AVNS_6CCKqpRPUL-yE62jyzM",
+    database: 'defaultdb',
+    port: 25060
 });
 
 pool.getConnection((err, connection) => {
